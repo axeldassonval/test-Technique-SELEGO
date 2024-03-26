@@ -10,8 +10,8 @@ Vue utilisateur :
 Projet :
 - Une erreur de rendu de la page due à l'utilisation de la fonction "toString" dans la partie HTML de l'application. Je l'ai remplacée par "String(project.name)" qui fonctionnait dans ce cas d'utilisation.
 - Erreur dans la fonction "setProject" qui attribuait un tableau à la variable "project", rendant toutes les valeurs du rendu "undefined". Corrigé en remplaçant "setProject(u)" par "setProject(u[0])".
-Édition de projet :
 
+Édition de projet :
 - Erreur dans la fonction "setProject" qui attribuait un tableau à la variable "project", empêchant ainsi le pré-remplissage du projet. Corrigé en remplaçant "setProject(u)" par "setProject(u[0])".
 - Le champ "name" était désactivé, j'ai retiré l'attribut "disabled" pour permettre la modification du nom du projet.
 
